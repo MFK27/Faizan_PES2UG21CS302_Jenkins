@@ -8,7 +8,7 @@ pipeline {
                     sh "g++ -o PES2UG21CS302-1 PES2UG21CS302.cpp"
                 }
             }
-        })
+        }
 
         stage('Test') {
             steps {

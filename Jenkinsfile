@@ -10,7 +10,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stae('Test') {
             steps {
                 script {
                     echo 'Running the C++ program...'

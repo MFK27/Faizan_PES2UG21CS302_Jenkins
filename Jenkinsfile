@@ -14,7 +14,8 @@ pipeline {
             steps {
                 script {
                     echo 'Running the C++ program...'
-                    sh "./PES2UG21CS302-1"
+                    // Introduce an error by using the wrong file name
+                    sh "./PES2UG21CS302-2"
                 }
             }
         }
@@ -28,7 +29,8 @@ pipeline {
 
     post {
         failure {
-            echo 'Pipeline failed!'
+            // Introduce a syntax error by removing the single quotes
+            echo Pipeline failed!
         }
     }
 }
